@@ -9,78 +9,99 @@ import {
   UilSignOutAlt,
 } from "@iconscout/react-unicons";
 
+
 // Analytics Cards imports
 import { UilUsdSquare, UilMoneyWithdrawal } from "@iconscout/react-unicons";
 import { keyboard } from "@testing-library/user-event/dist/keyboard";
-
+/*
 // Recent Card Imports
 import img1 from "../imgs/img1.png";
 import img2 from "../imgs/img2.png";
-import img3 from "../imgs/img3.png";
+import img3 from "../imgs/img3.png";*/
 
 
 
 // import icons
-import { FaYoutube, FaInstagram, FaGithub } from 'react-icons/fa';
+import { FaYoutube, FaInstagram, FaGithub, FaFacebook, FaTwitter  } from 'react-icons/fa';
 import { BsChatDotsFill } from 'react-icons/bs';
 
+
 // import images
-import AboutImg from '../assets/img/about.png';
-import Feature1Img from '../assets/img/features/feature1.png';
-import Feature2Img from '../assets/img/features/feature2.png';
-import Feature3Img from '../assets/img/features/feature3.png';
-import Feature4Img from '../assets/img/features/feature4.png';
-import Avatar1Img from '../assets/img/testimonials/avatar1.png';
-import Avatar2Img from '../assets/img/testimonials/avatar2.png';
-import Avatar3Img from '../assets/img/testimonials/avatar3.png';
-import LogoV2 from '../assets/img/logo-v2.png';
-import HeroImage from '../assets/img/hero-img.png';
-import Feature1BgImg from '../assets/img/features/feature1_bg.png';
-import Feature2BgImg from '../assets/img/features/feature2_bg.png';
-import Feature3BgImg from '../assets/img/features/feature3_bg.png';
-import Feature4BgImg from '../assets/img/features/feature4_bg.png';
+import AboutImg from '../../src/assets/img/about.png';
+import Feature1Img from '../../src/assets/img/features/feature1.png';
+import Feature2Img from '../../src/assets/img/features/feature2.png';
+import Feature3Img from '../../src/assets/img/features/feature3.png';
+import Feature4Img from '../../src/assets/img/features/feature4.png';
+import Avatar1Img from '../../src/assets/img/testimonials/avatar1.png';
+import Avatar2Img from '../../src/assets/img/testimonials/avatar2.png';
+import Avatar3Img from '../../src/assets/img/testimonials/avatar3.png';
+import LogoV2 from '../../src/assets/img/logo-v2.png';
+import afroseer from '../../src/assets/img/afroseer.jpg';
+import about2 from '../../src/assets/img/fac.png';
+import HeroImage from '../../src/assets/img/hero-img.png';
+import Feature1BgImg from '../../src/assets/img/features/feature1_bg.png';
+import Feature2BgImg from '../../src/assets/img/features/feature2_bg.png';
+import Feature3BgImg from '../../src/assets/img/features/feature3_bg.png';
+import Feature4BgImg from '../../src/assets/img/features/feature4_bg.png';
+import heero from '../../src/assets/img/heero.png';
+import mmm from '../../src/assets/img/features/mmm.png';
+import cong from '../../src/assets/img/features/cong.png';
+import admin from '../../src/assets/img/features/admin.png';
+import congé from '../../src/assets/img/features/congé.png';
+import img1 from '../../src/assets/img/features/img1.webp';
+import img2 from '../../src/assets/img/features/img2.webp';
+import img3 from '../../src/assets/img/features/img3.webp';
+import img4 from '../../src/assets/img/features/img4.webp';
+import equipe from "../../src/assets/img/equipe.png";
+
+
+//hello 
+export const helloData = {
+  image: equipe,
+  title: "Bienvenue à l'équipe d'Afroser",
+  subtitle:
+    '',
+};
 
 export const navigationData = [
   {
-    name: 'Afroser',
+    name: 'Accueil',
     href: '/',
   },
   {
-    name: 'About',
-    href: '#',
+    name: 'A propos',
+    href: '',
   },
+  
   {
-    name: 'Features',
-    href: '#',
-  },
-  {
-    name: 'Signup',
+    name: 'Se connecter',
     href: '/login',
   },
 ];
 
 export const heroData = {
-  title: ` Order Products Faster Easier`,
-  subtitle:
-    'Order your favorite foods at any time and we will deliver them right to where you are.',
+  title: ` Osez La Dégitalisation autrement! `,
+  subtitle:'Afroser, Agence de communication',
   btnText: 'Get Started',
-  image: HeroImage,
+  image: heero,
 };
 
+//about 
 export const aboutData = {
-  image: AboutImg,
-  title: 'Find Out A Little More About Us',
+  image: about2,
+  title: 'En savoir un peu plus sur nous',
   subtitle:
-    'We are a company dedicated to the distribution of products by delivery to your home or to the place where you are, with the best quality of delivery.',
+    'Agence de communication & solutions digitales en Tunisie qui vous propose des services développement web et mobile, conseil et analyse; stratégie digitale et réseaux sociaux.',
 };
 
+//services
 export const featuresData = {
-  title: 'Some Services We Offer',
+  title: 'Quelques services que nous offrons',
   subtitle:
-    'With our app you can view the route of your order, from our local headquarters to the place where you are. Look for the app now!',
+    "Avec cette application permet aux employés d'Afroser d'accéder aux services en ligne de l'administration",
   list: [
     {
-      image: Feature1Img,
+      image: img1,
       bgImage: Feature1BgImg,
       title: 'Payment Done',
       description:
@@ -89,7 +110,7 @@ export const featuresData = {
       delay: '400',
     },
     {
-      image: Feature2Img,
+      image: img2,
       bgImage: Feature2BgImg,
       title: 'Find Your Product',
       description:
@@ -98,7 +119,7 @@ export const featuresData = {
       delay: '700',
     },
     {
-      image: Feature3Img,
+      image: img3,
       bgImage: Feature3BgImg,
       title: 'Print Out',
       description:
@@ -107,7 +128,7 @@ export const featuresData = {
       delay: '1000',
     },
     {
-      image: Feature4Img,
+      image: img4,
       bgImage: Feature4BgImg,
       title: 'Product Received',
       description:
@@ -151,12 +172,12 @@ export const ctaData = {
   btnText1: 'Learn more',
   btnText2: 'Request Demo',
 };
-
+//footer
 export const footerData = {
-  logo: LogoV2,
-  address: 'Product Texas, 234 Bokki Avenue Street BMW 99388',
-  email: 'info@producttexas.project',
-  phone: '1-232-7788 (Main)',
+  logo: afroseer,
+  address: 'Cité Jasmain, Ben Arous, Tunisia',
+  email: 'hello@afroser.com',
+  phone: '(+216) 53 312 313',
   list1: [
     {
       name: 'Profile',
@@ -199,22 +220,22 @@ export const footerData = {
   ],
   socialList: [
     {
-      icon: <FaYoutube />,
-      href: '/facebook.com',
+      icon: <FaFacebook />,
+      href: 'https://www.facebook.com/afroseragencedecomm',
     },
     {
       icon: <FaInstagram />,
-      href: '#',
+      href: 'https://www.instagram.com/afroser_com/?fbclid=IwAR3sO9_ybLLV1iLQyRGusGFi5cyyoR0f_nLM1_1tMg-Ekw3NUWKWymIG9YU',
     },
     {
-      icon: <FaGithub />,
-      href: '#',
+      icon: <FaTwitter />,
+      href: 'https://twitter.com/Afroser_com?fbclid=IwAR10UbZu2C5NJ7W-2EESRPIarJxaRDHTupuxSyMXIiK56GUaZx7pd2HZ6Os',
     },
   ],
 };
 
 export const copyrightData = {
-  text: '© Product Texas, 2022. All rights reserved. Company Registration Number: 09833888.',
+  text: '© Afroser, 2023. Tous les droits sont réservés. Numéro d enregistrement de la société : (+216) 53 312 313.',
   icon: <BsChatDotsFill />,
 };
 
@@ -240,38 +261,6 @@ export const copyrightData = {
 
 
 
-// Sidebar Data
-export const SidebarData = [
-  {
-    icon: UilEstate,
-    heading: "Dashboard",
-    path:'/dashboard',
-    
-    
-  },
-  {
-    icon: UilClipboardAlt,
-    heading: "Orders",
-    path:"/orders",
-   
-  
-  },
-  {
-    icon: UilUsersAlt,
-    heading: "Customers",
-    path:"/customers",
-  },
-  {
-    icon: UilPackage,
-    heading: 'Products',
-    path:"/products",
-  },
-  {
-    icon: UilChart,
-    heading: 'Analytics',
-    path:"/analytics",
-  },
-];
 
 // Analytics Cards Data
 export const cardsData = [
@@ -355,10 +344,11 @@ export const userMenu = [
     icon: UilEstate,
   },
   {
-    name: "Appointments",
-    path: "/appointments",
-    icon: "fa-solid fa-list",
+    name: "crud",
+    path: "/crud",
+    icon: UilEstate,
   },
+ 
   {
     name: "Apply Employee",
     path: "/apply-doctor",
@@ -394,21 +384,31 @@ export const adminMenu = [
     path: "/admin/users",
     icon: "fa-solid fa-user",
   },
+  
   {
     name: "Profile",
     path: "/profile",
     icon: "fa-solid fa-address-card",
   },
   {
-    name: "Calendrier",
-    path: "/admin/calendrier",
-    icon: "fa-solid fa-calendar",
+    name: "crud",
+    path: "/crud",
+    icon: UilEstate,
   },
+ 
   {
-    name: "To do",
-    path: "/admin/board" ,
-    icon: "fa-solid fa-user",
+    name: "Todo",
+    path: "/todo",
+    icon: "fa-solid fa-list",
   },
+ 
+  
+  {
+    name: "Calendrier",
+    path: "/Calendar",
+    icon: "fa-solid fa-list",
+  },
+ 
 ];
 
 //* calendar Events
@@ -417,7 +417,7 @@ let todayStr = moment().format("YYYY-MM-DD")  // YYYY-MM-DD of today
 export const INITIAL_EVENTS = [
   {
     id: createEventId(),
-    title: 'Lunch Pary',
+    title: 'VC Meeting',
     start: todayStr + 'T09:00:00',
 
   },
@@ -428,7 +428,7 @@ export const INITIAL_EVENTS = [
   },
   {
     id: createEventId(),
-    title: "Head Meetup",
+    title: "VC Meeting",
     start: moment(todayStr).add(2, "days").format("YYYY-MM-DD") + 'T20:00:00'
   },
   {
@@ -438,7 +438,7 @@ export const INITIAL_EVENTS = [
   },
   {
     id: createEventId(),
-    title: "Payment Shedules",
+    title: "VC Meeting",
     start: moment(todayStr).add(5, "days").format("YYYY-MM-DD") + 'T13:00:00'
   },
   {

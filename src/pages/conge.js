@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import Layout from "./../components/Layout";
+import Layout from "./../components/Layout/Layout";
 import { Row } from "antd";
-import DoctorList from "../components/DoctorList";
+import DoctorList from "../components/RHList";
 import "../styles/Homepage.css"
 const Hello = () => {
   const [doctors, setDoctors] = useState([]);
@@ -38,7 +38,7 @@ const Hello = () => {
         {doctors && doctors.map((doctor) => <DoctorList doctor={doctor} />)}
       </Row>
     </Layout>
-    /</div>
+    </div>
     </div>
   );
 };

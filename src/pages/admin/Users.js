@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Layout from "./../../components/Layout";
+import Layout from "./../../components/Layout/Layout";
 import axios from "axios";
 import { Table } from "antd";
 import '../../styles/Homepage.css';
@@ -56,8 +56,8 @@ const Users = () => {
     <div className="Appdash">
     <div className="AppGlassdash ">
     <Layout/>
-    <div>
-      <h1 className="text-center m-2">Liste des utilisateus</h1>
+    <div className="mt-20">
+      <h1 className="h2 mb-10">Liste des utilisateus</h1>
       <Table columns={columns} dataSource={users} /></div>
     
     </div>

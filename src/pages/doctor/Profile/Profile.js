@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Layout from "../../../components/Layout";
+import Layout from "../../../components/Layout/Layout";
 import axios from "axios";
 import { useParams, useNavigate } from "react-router-dom";
 import { Col, Form, Input, Row, TimePicker, message } from "antd";
@@ -85,7 +85,7 @@ const Profile = () => {
     <div className="signup-containerprofile">
       <div className="signup-form-containerprofile ">
       <div className="left">
-      <h1>Manage Profile</h1>
+      
       {doctor && (
         <Form
         className="register-form"

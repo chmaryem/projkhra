@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Layout from "./../components/Layout";
+import Layout from "./../components/Layout/Layout";
 import moment from "moment";
 import { Table } from "antd";
 import "../styles/Homepage.css"

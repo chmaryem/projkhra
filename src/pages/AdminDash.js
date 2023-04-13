@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import Layout from "../components/Layout";
+import Layout from "../components/Layout/Layout";
 import { Row } from "antd";
-import DoctorList from "../components/DoctorList";
+import DoctorList from "../components/RHList";
 
-import MainDash from "../components/MainDash/MainDash";
-import RightSide from "../components/RigtSide/RightSide";
+import MainDash from "../components/Dash/MainDash/MainDash";
+import RightSide from "../components/Dash/RigtSide/RightSide";
 import "../styles/Homepage.css"
 const HomePage = () => {
   const [doctors, setDoctors] = useState([]);

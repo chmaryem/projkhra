@@ -9,7 +9,7 @@ import { showLoading, hideLoading } from "../../redux/features/alertSlice";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
-import Header from "../../components/Header";
+import Header from "../../components/Home/Header";
 const Register = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();

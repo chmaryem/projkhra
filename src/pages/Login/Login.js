@@ -9,7 +9,7 @@ import "../Login/login.css";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
-import Header from "../../components/Header";
+import Header from "../../components/Home/Header";
 
 const Login = () => {
   const navigate = useNavigate();

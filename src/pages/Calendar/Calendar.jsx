@@ -7,7 +7,7 @@ import timeGridPlugin from '@fullcalendar/timegrid'
 import useCalendar from '../../store/Calendar'
 import { createEventId } from "../../Data/data"
 import './Calendar.css';
-import Layout from '../../components/Layout'
+import Layout from '../../components/Layout/Layout'
 
 const Calendar = () => {
 
